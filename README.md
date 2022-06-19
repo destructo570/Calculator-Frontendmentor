@@ -2,9 +2,15 @@
 
 Frontend mentor challenge where I needed to develop the ever popular rock, paper, scissors, lizard, spock game!
 
-See live preview - [LivePreview](https://rock-paper-scissor-java-script.vercel.app/)
+## Play it here - [LivePreview](https://rock-paper-scissor-java-script.vercel.app/)
 
-# Made With
+#ScreenShots
+
+![alt text](https://imgur.com/K8wdVCI.png)
+
+![alt text](https://imgur.com/0qUKIpS.png)
+
+# Made With ☕ and
 - HTML
 - CSS
 - Vanilla Javascript
