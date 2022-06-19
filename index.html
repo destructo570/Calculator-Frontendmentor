@@ -3,76 +3,86 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="app.css" />
     <!-- displays site properly based on user's device -->
-
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
-    <link rel="stylesheet" type="text/css" href="./app.css" />
-
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Spartan:wght@700&display=swap"
-      rel="stylesheet"
-    />
-    <script src="./app.js" defer></script>
-
-    <title>Frontend Mentor | Calculator app</title>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&display=swap" rel="stylesheet" />
+    <title>Frontend Mentor | Rock, Paper, Scissors</title>
   </head>
-  <body class="container">
-    <main class="calc">
-      <div class="calc__wrapper">
-        <div class="calc__header">
-          <h3 class="title">calc</h3>
-          <div class="theme__switcher">
-            <div class="theme__number">1&nbsp&nbsp&nbsp 2 &nbsp&nbsp&nbsp 3</div>
-            <div class="theme__switcher-themes">
-              <h4>Theme</h4>
-              <div class="theme__toggle">
-                <div class="theme-1 theme-dot "></div>
-                <div class="theme-2 theme-dot visibility"></div>
-                <div class="theme-3 theme-dot visibility"></div>
-              </div>
-
+  <body>
+    <div id="score_board">
+      <p>Rock</br>Paper</br>Scissors</br>Lizard</br>Spock</br></p>
+      <div>
+        <p>Score</p>
+        <p id="player_score">0</p>
+      </div>
+    </div>
+    <div id="game_board">
+      <div class="game_chip" id="spock">
+        <div class="border spock_border">
+          <div class="background">
+            <img src="/images/icon-spock.svg" class="game_chip_icon" alt="spock"/>
+          </div>
+        </div>
+      </div>
+      <div class="game_chip" id="lizard">
+        <div class="border lizard_border">
+          <div class="background">
+            <img src="/images/icon-lizard.svg" class="game_chip_icon" alt="lizard"/>
+          </div>
+        </div>
+      </div>
+         <div class="game_chip" id="paper">
+          <div class="border paper_border">
+            <div class="background">
+              <img src="/images/icon-paper.svg" class="game_chip_icon" alt="paper"/>
             </div>
           </div>
         </div>
-        <div class="calc__screen">
-          <h1 id="calc-screen-text">0</h1>
+        <div class="game_chip" id="scissors">
+          <div class="border scissors_border">
+            <div class="background">
+              <img src="/images/icon-scissors.svg" class="game_chip_icon" alt="paper"/>
+            </div>
+          </div>
         </div>
-        <div class="calc__input">
-          
-          <button class="seven">7</button>
-          <button class="eight">8</button>
-          <button class="nine">9</button>
-          <button class="del button-config">del</button>
-          <button class="four">4</button>
-          <button class="five">5</button>
-          <button class="six">6</button>
-          <button class="addition">+</button>
-          <button class="one">1</button>
-          <button class="two">2</button>
-          <button class="three">3</button>
-          <button class="subtract">-</button>
-          <button class="point">.</button>
-          <button class="zero">0</button>
-          <button class="divide">/</button>
-          <button class="multiply">x</button>
-          <button class="reset button-config">reset</button>
-          <button class="equal">=</button>
+        <div class="game_chip" id="rock">
+          <div class="border rock_border">
+            <div class="background">
+              <img src="/images/icon-rock.svg" class="game_chip_icon" alt="paper"/>
+            </div>
+          </div>
+        </div>
+    </div>
+    <div id="result">
+      <div class="result_selections">
+        <div id="player_choice" class="game_chip">
+          <div class="border scissors_border">
+            <div class="background">
+              <img src="/images/icon-scissors.svg" class="game_chip_icon" alt="paper"/>
+            </div>
+          </div>
+          <p>You chose</p>
+        </div>
+        <div id="computer_choice" class="game_chip">
+          <div class="border rock_border">
+            <div class="background">
+              <img src="/images/icon-rock.svg" class="game_chip_icon" alt="paper"/>
+            </div>
+          </div>
+          <p>Computer chose</p>
         </div>
       </div>
-
-      </section>
-     
-    </main>
-    <!-- <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div> -->
+      <h2 class="player_result">You win</h2>
+      <button id="btn_play_again">Play again</button>
+    </div>
+    <script src="app.js"></script>
   </body>
 </html>
