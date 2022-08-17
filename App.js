@@ -47,7 +47,7 @@ function determineWinner(playerChoice, computerChoice) {
     return 1;
   } else if (playerChoice === SCISSOR && computerChoice === ROCK) {
     return 0;
-  } else if (playerChoice === SCISSOR && computerChoice === ROCK) {
+  } else if (playerChoice === PAPER && computerChoice === ROCK) {
     return 1;
   } else if (playerChoice === LIZARD && computerChoice === ROCK) {
     return 0;
